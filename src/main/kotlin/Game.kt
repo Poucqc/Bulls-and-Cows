@@ -41,7 +41,7 @@ class Game {
     fun displayRecord() {
         println("게임 기록입니다")
         for ((index, value) in record.withIndex()) {
-            println("${index + 1}: $value")
+            println("${index + 1}번째 게임: ${value}번째 성공")
         }
     }
 
