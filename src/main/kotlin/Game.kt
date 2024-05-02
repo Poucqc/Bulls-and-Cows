@@ -43,7 +43,7 @@ class Game {
         if (record.isNotEmpty()) {
             println("게임 기록입니다")
             for ((index, value) in record.withIndex()) {
-                println("${index + 1}번째 게임: ${value}번째 성공")
+                println("${index + 1}번째 게임: ${value}번째 시도에 성공")
             }
         } else {
             println("기록이 없습니다")
