@@ -33,15 +33,20 @@ class Game {
             } else {
                 println("정답입니다 ${count}번 만에 맞추셨습니다")
                 record.add(count)
+                displayRecord()
                 break
             }
         }
     }
 
     fun displayRecord() {
-        println("게임 기록입니다")
-        for ((index, value) in record.withIndex()) {
-            println("${index + 1}번째 게임: ${value}번째 성공")
+        if (record.isNotEmpty()) {
+            println("게임 기록입니다")
+            for ((index, value) in record.withIndex()) {
+                println("${index + 1}번째 게임: ${value}번째 성공")
+            }
+        } else {
+            println("기록이 없습니다")
         }
     }
 
