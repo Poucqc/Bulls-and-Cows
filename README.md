@@ -1,4 +1,4 @@
-# 숫자 야구 ###(Bulls and Cows)
+# 숫자 야구 ### (Bulls and Cows)
 ![download](https://github.com/Poucqc/untitled7/assets/163396796/c488130a-c841-4b57-a48c-4e7aa33dce09)
 (출처 : MBC 무한도전)
 
