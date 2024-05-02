@@ -10,12 +10,12 @@ fun main() {
     println("어서오세요! 야구 게임에 오신거 환영합니다.")
     var choice: Int?
     do {
-        displayMenu()
+        game.displayMenu()
         choice = readlnOrNull()?.toIntOrNull()
         try {
             when (choice) {
                 1 -> game.start()
-                2 -> displayRecord()
+                2 -> game.displayRecord()
                 3 -> exitProcess(0)
                 else -> throw IllegalArgumentException("메뉴를 정확히 선택해 주세요")
             }
@@ -23,20 +23,4 @@ fun main() {
             println(e.message)
         }
     } while (choice != 3)
-}
-
-fun displayMenu() {
-    println("원하시는 메뉴를 입력해주세요")
-    println("1. 게임 시작")
-    println("2. 기록 보기")
-    println("3. 게임 종료")
-}
-
-fun displayRecord() {
-    val game = Game()
-    val records = game.getRecord()
-    println("게임 기록입니다")
-    for ((index, value) in records.withIndex()) {
-        println("${index + 1}: $value")
-    }
 }
