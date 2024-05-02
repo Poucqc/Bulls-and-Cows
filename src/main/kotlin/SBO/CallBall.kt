@@ -1,7 +1,9 @@
-package org.example
+package org.example.SBO
+
+import org.example.CallSBO
 
 class CallBall : CallSBO() {
-    override fun call(correctAnswer: IntArray, guessedNumber: IntArray): String {
+    override fun call(correctAnswer: IntArray, guessedNumber: IntArray): Int {
         var ballCount = 0
         for (i in guessedNumber.indices) {
             if (guessedNumber[i] == correctAnswer[i]) {
@@ -11,7 +13,6 @@ class CallBall : CallSBO() {
                 ballCount++
             }
         }
-        val ball = ballCount.toString() + "B"
-        return ball
+        return ballCount
     }
 }
