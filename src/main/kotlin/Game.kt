@@ -4,7 +4,7 @@ import org.example.Number.GettingNumber
 import org.example.Number.MakingNumber
 import org.example.SBO.CallBall
 import org.example.SBO.CallStrike
-import org.example.SBO.RepositioningSBO
+import org.example.SBO.SBCall
 
 
 
@@ -14,7 +14,7 @@ class Game {
     fun start() {
         val making = MakingNumber()
         val get = GettingNumber()
-        val call = RepositioningSBO()
+        val call = SBCall()
         val strikeCall = CallStrike()
         val ballCall = CallBall()
 
@@ -28,7 +28,7 @@ class Game {
                 val strike = strikeCall.call(answer, guess)
                 val ball = ballCall.call(answer, guess)
                 count++
-                call.reposition(strike, ball)
+                call.call(strike, ball)
             } else {
                 println("정답입니다 ${count}번 만에 맞추셨습니다")
                 record.add(count)

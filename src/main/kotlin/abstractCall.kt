@@ -1,5 +1,5 @@
 package org.example
 
-abstract class CallSBO {
-    abstract fun call (correctAnswer:IntArray, guessedNumber: IntArray) : Int
+abstract class CallSB {
+    abstract fun call (answer:IntArray, guess: IntArray) : Int
 }

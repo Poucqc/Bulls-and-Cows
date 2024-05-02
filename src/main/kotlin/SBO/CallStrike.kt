@@ -1,12 +1,12 @@
 package org.example.SBO
 
-import org.example.CallSBO
+import org.example.CallSB
 
-class CallStrike : CallSBO() {
-    override fun call(correctAnswer: IntArray, guessedNumber: IntArray): Int {
+class CallStrike : CallSB() {
+    override fun call(answer: IntArray, guess: IntArray): Int {
         var strikeCount = 0
-        for (i in correctAnswer.indices) {
-            if (correctAnswer[i] == guessedNumber[i]) {
+        for (i in answer.indices) {
+            if (answer[i] == guess[i]) {
                 strikeCount++
             }
         }
