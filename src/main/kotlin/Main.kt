@@ -34,7 +34,7 @@ fun displayMenu() {
 
 fun displayRecord() {
     val game = Game()
-    var records = game.getRecord()
+    val records = game.getRecord()
     println("게임 기록입니다")
     for ((index, value) in records.withIndex()) {
         println("${index + 1}: $value")
