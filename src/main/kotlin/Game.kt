@@ -37,25 +37,18 @@ class Game {
         }
     }
 
-    fun getRecord(): List<Int> {
-        return record
+    fun displayRecord() {
+        println("게임 기록입니다")
+        for ((index, value) in record.withIndex()) {
+            println("${index + 1}: $value")
+        }
     }
-
 
     fun displayMenu() {
         println("원하시는 메뉴를 입력해주세요")
         println("1. 게임 시작")
         println("2. 기록 보기")
         println("3. 게임 종료")
-    }
-
-    fun displayRecord() {
-        val game = Game()
-        val records = game.getRecord()
-        println("게임 기록입니다")
-        for ((index, value) in records.withIndex()) {
-            println("${index + 1}: $value")
-        }
     }
 }
 
