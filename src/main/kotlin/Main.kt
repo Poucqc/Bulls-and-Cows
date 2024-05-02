@@ -7,7 +7,7 @@ import kotlin.system.exitProcess
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 fun main() {
     val game = Game()
-    println("어서오세요! 야구 게임에 오신거 환영합니다.")
+    println("어서오세요! 야구 게임에 오신것을 환영합니다.")
     var choice: Int?
     do {
         game.displayMenu()
