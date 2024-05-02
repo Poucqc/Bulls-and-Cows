@@ -19,6 +19,7 @@ class Game {
         val ballCall = CallBall()
 
         println("게임 시작 : 무작위 정답을 생성합니다")
+        println("게임을 중간에 종료하시려면 'quit' 를 입력해 주세요")
         val answer = making.makeNumber()
         var count = 1
         var guess : IntArray
